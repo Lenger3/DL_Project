@@ -36,7 +36,7 @@ def kalp_hastaligi_tahmin_sistemi(file_obj):
         
         df_original['Risk_Durumu'] = ["Presence" if x == 1 else "Absence" for x in tahminler_sinif]
         
-        output_path = "sonuclar.csv"
+        output_path = "sonuclar/sonuclar.csv"
         df_original.to_csv(output_path, index=False)
         return output_path
 
